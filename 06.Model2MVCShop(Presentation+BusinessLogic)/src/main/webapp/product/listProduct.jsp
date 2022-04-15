@@ -171,7 +171,7 @@ function fncGetList(currentPage) {
 		<c:forEach var="product" items="${list}">
 		<c:set var="i" value="${ i+1 }" />
 		<tr class="ct_list_pop">
-			<td align="center">${ i }</td>
+			<td align="center">${product.prodNo }</td>
 			<td></td>	
 			<td align="left"><a href="/getProduct.do?prodNo=${product.prodNo}&menu=${menu}">${product.prodName}</a></td>
 			<td></td>
